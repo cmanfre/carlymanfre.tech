@@ -14,64 +14,7 @@
 
     <title>Carly Manfre's Portfolio</title>
 
-    <style>
-
-      body {
-        position: relative;
-        margin-top: 70px;
-        background-color: #2a2a2a;
-        color: white;
-      }
-
-      #alert {
-        width: 1500px;
-      }
-
-      #Header,
-      #Welcome,
-      #Portfolio,
-      #Contact {
-        width: 1000px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-
-      a {
-        color:#b4e9ff;
-      }
-
-      a:hover {
-        color:white;
-      }
-
-      /** Extra small devices (portrait phones, less than 576px) **/
-      @media (max-width: 575.98px) { 
-        width: auto;
-        margin: 0 auto; 
-      }
-
-      /** Small devices (landscape phones, 576px and up) **/
-      @media (min-width: 576px) and (max-width: 767.98px) {
-        #Header,
-        #Welcome,
-        #Portfolio,
-        #Contact {
-          width: auto;
-          margin-top: 100px;
-        }
-      }
-
-      /** Medium devices (tablets, 768px and up) **/
-      @media (min-width: 768px) and (max-width: 991.98px) {}
-
-      /** Large devices (desktops, 992px and up) **/
-      @media (min-width: 992px) and (max-width: 1199.98px) {}
-
-      /** Extra large devices (large desktops, 1200px and up) **/
-      @media (min-width: 1200px) {}
-
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="CSS/home.css">
 
   </head>
 
@@ -86,6 +29,9 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="#Welcome">Welcome <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Experience">Experience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Portfolio">Portfolio</a>
@@ -109,6 +55,8 @@
 
     <div class="container" id="Welcome">
       <h1>Welcome!</h1>
+      <p>Hello and welcome to my website.  I am currently developing this website to show my experience, as well as to practice web development. </p>
+
       <p>Lorem ipsum dolor sit amet, cu pro ipsum fuisset delicata. Te stet oblique fabellas sed, mel errem animal fabellas ex. Mel eu possim atomorum, ad   quo veri probatus accusata. Id qui tempor nemore ponderum. Cu modo ludus salutandi nec, eos no oporteat laboramus.
 
       Et duo euismod tibique volutpat, nihil ocurreret imperdiet an nec. In mei vocent denique, cetero fabulas concludaturque eos in. In veritus vivendo salutandi eum, labore antiopam iudicabit ius eu, putent deserunt pri id. Quaeque probatus percipitur pri in, ex mea tation habemus probatus. Ei sit mollis percipit, sed ad accumsan urbanitas gloriatur.
@@ -120,43 +68,117 @@
       Dolor congue ut pri, eos te discere maluisset. Posse postulant mea eu, nusquam euripidis vis te, magna exerci no nam. No eos velit omnesque copiosae. Eum eu luptatum petentium consetetur, pro vitae delectus eloquentiam eu. Id quo veritus postulant.</p>
     </div>
 
+    <div class="container" id="Experience">
+    <h1>Experience</h1>
+
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Front-End Web Developer - Internship
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <p>ISPA Technology, November 2018 to Present</p>
+              <p>Remote internship, gaining experience in front-end web development React and Redux JavaScript libraries</p>
+              <div class="container">
+                <p>• Design and develop front-end web components whose functionality is composed of pulling and storing content in backend, and displaying derived information from user input</p>
+                <p>• Collaborate with 3 other front-end developers and project lead to organize project development and assist in any occurring issues</p>
+                <p>• Collaborate with backend to assure correct procedures for pushing and pulling stored data and to ensure progress of overlapping assignments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Front-End Developer
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <p>Leapdoctor Locums, July 2017 to June 2018</p>
+              <p>Responsible for creating all application screens and updating designs as development progressed</p>
+              <div class="container">
+                <p>• Designed mobile application screens, original icons, and branding logos with Adobe programs Photoshop and Illustrator</p>
+                <p>• Created promotional material such as social media graphics, gifs, and custom promotional videos with Adobe programs Photoshop, AfterEffects, and Premiere</p>
+                <p>• Collaborated with development team on project goals, requirements, expectations, and timelines</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Skills
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <p>• Business Analytics: Excel, Visio, Wordpress</p>
+              <p>• Web Development: HTML, CSS, JavaScript (React, Bootstrap), SQL, C#, GitHub</p>
+              <p>• Design Tools: Photoshop, Illustrator, InDesign, AfterEffects, Premiere</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
 
     <div class="container" id="Portfolio">
     <h1>Portfolio</h1>
+
+    
+
       <div class="row">
-        <div class="col-sm">
+
+        <div class="col-4">
           <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title" style="color:black">Web Development Experience Examples</h5>
-        <p class="card-text" style="color:black">Features and functions of this website</p>
-        <a href="HTML/PortfolioWebsite.html" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
+            <div class="card-body">
+              <h5 class="card-title">Web Dev Experience</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Web dev experience information</p>
+              <a href="HTML/PortfolioWebsite.html" class="card-link">Go</a>
+            </div>
+          </div>
         </div>
-        <div class="col-sm">
+
+
+        <div class="col-4">
           <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title" style="color:black">React Experience</h5>
-        <p class="card-text" style="color:black">Front-End Web Developer experience</p>
-        <a href="HTML/React_Experience.html" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
+            <div class="card-body">
+              <h5 class="card-title">Web Design Experience</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Web design experience information</p>
+              <a href="HTML/Web_Design_Experience.html" class="card-link">Go</a>
+            </div>
+          </div>
         </div>
-        <div class="col-sm">
+
+        <div class="col-4">
           <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title" style="color:black">Web Design Experience</h5>
-        <p class="card-text" style="color:black">Front-End App Designer Experience</p>
-        <a href="HTML/Web_Design_Experience.html" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
+            <div class="card-body">
+              <h5 class="card-title">React Experience</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">React experience information</p>
+              <a href="HTML/React_Experience.html" class="card-link">Go</a>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
-  </div>
   
   <div class="container" id="Contact">
     <h4>Contact</h4>
@@ -171,6 +193,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
 
   </body>
 
